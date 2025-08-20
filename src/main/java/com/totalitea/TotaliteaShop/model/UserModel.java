@@ -18,6 +18,6 @@ public class UserModel {
 
     private LocalDateTime registeredAt = LocalDateTime.now();
 
-    @OneToMany(mappedBy = "users", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<OrderModel> orders=new ArrayList<>();
 }
